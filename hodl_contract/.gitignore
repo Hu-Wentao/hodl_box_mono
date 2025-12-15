@@ -1,0 +1,13 @@
+# Hardhat
+node_modules
+.env
+coverage
+coverage.json
+typechain
+typechain-types
+artifacts
+cache
+gasReporterOutput.json
+
+# Misc
+.DS_Store

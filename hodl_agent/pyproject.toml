@@ -1,0 +1,26 @@
+[project]
+name = "hodl_agent"
+version = "0.1.0"
+description = "HODL Box AI Agent for cryptocurrency investment and mental support"
+requires-python = ">=3.13"
+
+
+dependencies = [
+    "fastapi>=0.124.4",
+    "json5>=0.12.1",
+    "mcp>=1.22.0",
+    "openai>=2.8.1",
+    "python-dateutil>=2.9.0.post0",
+    "python-dotenv>=1.2.1",
+    "qwen-agent[code_interpreter]>=0.0.31",
+    "uvicorn>=0.38.0",
+    "web3>=7.14.0",
+]
+
+[project.scripts]
+hodl-agent = "main:main"
+hodl-api = "api:run_server"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
